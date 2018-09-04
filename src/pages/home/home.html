@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Force Starter</h3>
+  <p>
+    If you get lost, you can pull the repo form the
+    <a href="https://murtazaaunali@bitbucket.org/murtazaaunali/ionic-sfdc-starter.git">Repository</a>.
+  </p>
+  <h3>Sample Users</h3>
+  <p>Fetching Users to check SalesforceMobileSDK Plugin Response</p>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      {{user.Name}}
+    </ion-item>
+  </ion-list>
+</ion-content>
