@@ -75,7 +75,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Force Starter</h3>\n  <p>\n    If you get lost, you can pull the repo form the\n    <a href="https://murtazaaunali@bitbucket.org/murtazaaunali/ionic-sfdc-starter.git">Repository</a>.\n  </p>\n  <h3>Sample Users</h3>\n  <p>Fetching Users to check SalesforceMobileSDK Plugin Response</p>\n  <ion-list>\n    <ion-item *ngFor="let user of users">\n      {{user.Name}}\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>APOC Mobile</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Force Starter</h3>\n  <p>\n    If you get lost, you can pull the repo form the\n    <a href="https://murtazaaunali@bitbucket.org/murtazaaunali/ionic-sfdc-starter.git">Repository</a>.\n  </p>\n  <h3>Sample Users</h3>\n  <p>Fetching Users to check SalesforceMobileSDK Plugin Response</p>\n  <ion-list>\n    <ion-item *ngFor="let user of users">\n      {{user.Name}}\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);
@@ -194,7 +194,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\app\app.html"*/'<ion-menu [content]="content" [swipeEnabled]="false">\n  <ion-toolbar>\n    <ion-title>Consent</ion-title>\n  </ion-toolbar>\n  <ion-content>\n    <ion-list>\n      <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </ion-item>\n      <ion-item menuClose ion-item (click)="logoutApp()">\n        Log out\n      </ion-item>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
