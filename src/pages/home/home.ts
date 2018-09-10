@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Nav, AlertController } from 'ionic-angular';
 
+import { AuthProvider } from './../../providers/auth/auth';
 // ForceJS Plugin
 import { OAuth, DataService } from 'forcejs';
 
@@ -9,9 +10,13 @@ import { OAuth, DataService } from 'forcejs';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  users: any;
-  constructor(public navCtrl: NavController) {
-    this.loadUsers()
+  @ViewChild(Nav) nav: Nav;
+  user = {
+    name: 'admin',
+    pw: 'admin'
+  };
+  constructor(public navCtrl: NavController, public authProvider: AuthProvider, public alertCtrl: AlertController) {
+    //this.loadUsers()
   }
 
   loadUsers() {
@@ -21,7 +26,7 @@ export class HomePage {
         let service = DataService.createInstance(oauthResult);
         service.query('SELECT Id, Name FROM User LIMIT 10')
           .then(response => {
-            this.users = response.records;
+            //this.users = response.records;
           });
       });
   }

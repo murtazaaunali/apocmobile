@@ -1,16 +1,1 @@
-<ion-menu [content]="content" [swipeEnabled]="false">
-  <ion-toolbar>
-    <ion-title>Consent</ion-title>
-  </ion-toolbar>
-  <ion-content>
-    <ion-list>
-      <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </ion-item>
-      <ion-item menuClose ion-item (click)="logoutApp()">
-        Log out
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
 <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
