@@ -14,11 +14,13 @@
 // automatically applied to the <body> element in the app.
 // Header Styles
 ion-app {
-  font-family: "Helvetica Neue";
+  font-family: "BrandonGrotesque-Regular";
+  border-top: 10px solid #009ada;
+  border-bottom: 10px solid #009ada;
 }
-
-.toolbar-background-md {
-  background: transparent;
+.toolbar-background {
+  background: transparent !important;
+  border: none !important;
 }
 
 .md .menu-inner {
@@ -39,4 +41,47 @@ ion-app {
 }
 .bar-button-md {
   height: 35px;
+}
+ion-list {
+  margin: 0px !important;
+}
+ion-item-divider {
+  background: #e4e9ec !important;
+}
+.toolbar-title {
+  font-size: 36px;
+}
+// Defining Fonts for App
+@font-face {
+  font-family: BrandonGrotesque-Bold;
+  src: url(../assets/fonts/BrandonGrotesque-Bold.otf);
+}
+
+@font-face {
+  font-family: BrandonGrotesque-Medium;
+  src: url(../assets/fonts/BrandonGrotesque-Medium.otf);
+}
+@font-face {
+  font-family: BrandonGrotesque-Regular;
+  src: url(../assets/fonts/BrandonGrotesque-Regular.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Bd.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Cn;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Cn.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Mdtitle.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Roman.otf);
 }

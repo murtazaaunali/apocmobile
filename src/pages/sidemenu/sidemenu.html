@@ -1,16 +1,24 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-content>
     <ion-list>
-      <button ion-item detail-none block menuClose *ngFor="let p of pages" (click)="openPage(p.page)">
-        <ion-icon item-start [name]="p.icon"></ion-icon>
-        {{ p.title }}
+      <ion-item class="profile-section">
+        <img src="../../assets/imgs/default-profile-inner.png" class="profile-image">
+        <h1 class="username">{{username}}</h1>
+        <h5 class="instance">APOC - Stage</h5>
+      </ion-item>
+      <button ion-item detail-none block menuClose *ngFor="let p of pages" (click)="openPage(p.component)">
+        <ion-img src="../../assets/imgs/{{p.icon}}" class="menu-icon"></ion-img>
+        <div class="text-menu-btn">{{ p.title }}</div>
       </button>
+    </ion-list>
+    <ion-list>
+      <ion-item-group>
+      <ion-item-divider color="light"></ion-item-divider>
+      <button ion-item detail-none block menuClose *ngFor="let s of settings" (click)="openPage(s.component)">
+        <ion-img src="../../assets/imgs/{{s.icon}}" class="menu-icon"></ion-img>
+        <div class="text-menu-btn"> {{ s.title }}</div>
+      </button>
+      </ion-item-group>
     </ion-list>
 
   </ion-content>

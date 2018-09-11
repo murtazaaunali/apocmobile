@@ -1,3 +1,61 @@
 page-sidemenu {
+  .menu-inner {
+    background: #f3f8f9 !important;
+  }
+  .menu-inner .content {
+    background: #f3f8f9 !important;
+  }
+  .item-block {
+    font-family: "HelveticaNeueLTStd-Roman";
+    text-transform: capitalize;
+    color: #616c71;
+    font-size: 16px;
+    border-bottom: 0.55px solid #e5eaed;
+    background: #f3f8f9 !important;
+    padding: 0px !important;
+  }
+  .item-block .item-inner {
+    padding-left: 15px;
+  }
+  .menu-icon {
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+    background: transparent !important;
+  }
+  .text-menu-btn {
+    position: absolute;
+    top: 17px;
+    left: 60px;
+  }
+  .profile-section {
+    background: #fafafd !important;
+    padding: 15px 0px !important;
+  }
+  .profile-section .item-inner {
+    border: none !important;
+  }
 
+  .profile-image{
+    width: 53px;
+    height: 53px;
+    background: transparent;
+  }
+
+  .username {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    color: #616d72;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "BrandonGrotesque-Medium";
+  }
+  .instance {
+    position: absolute;
+    top: 58px;
+    left: 80px;
+    font-size: 14px;
+    font-family: "BrandonGrotesque-Medium";
+  }
 }

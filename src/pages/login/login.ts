@@ -1,15 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Nav, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, Nav, AlertController } from 'ionic-angular';
+
+import { SidemenuPage } from './../sidemenu/sidemenu';
 
 import { AuthProvider } from './../../providers/auth/auth';
-
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -17,16 +11,17 @@ import { AuthProvider } from './../../providers/auth/auth';
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  @ViewChild(Nav) nav: Nav;
   user = {
-    name: 'admin',
-    pw: 'admin'
+    name: 'Akili Cooper',
+    pin: '1234'
   };
   constructor(public navCtrl: NavController, public authProvider: AuthProvider, public alertCtrl: AlertController) { }
 
   loginUser() {
-    this.authProvider.login(this.user.name, this.user.pw).then(success => {
+    this.authProvider.login(this.user.name, this.user.pin).then(success => {
       if (success) {
-        this.navCtrl.setRoot('MenuPage');
+        this.navCtrl.setRoot('SidemenuPage');
       } else {
         let alert = this.alertCtrl.create({
           title: 'Login failed',

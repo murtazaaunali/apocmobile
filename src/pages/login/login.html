@@ -1,18 +1,30 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar color="primary">
     <ion-title>Login</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label fixed>Username</ion-label>
-      <ion-input type="text" [(ngModel)]="user.name"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label fixed>Password</ion-label>
-      <ion-input type="password" [(ngModel)]="user.pw"></ion-input>
-    </ion-item>
-  </ion-list>
-  <button ion-button full (click)="loginUser()">Login</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 class="bg-image-login">
+        <ion-img src="../../assets/logo-main.png" class="logo-image"></ion-img>
+      </ion-col>
+      <ion-col col-6 class="bg-white">
+        <ion-list class="login-form" no-lines>
+          <ion-item text-center class="user-details">
+            <ion-img src="../../assets/imgs/default-profile.png" class="profile-image"></ion-img>
+            <p class="signed-in-as">Signed in as</p>
+            <h3 class="user-name">JOHN DOE</h3>
+          </ion-item>
+          <ion-item class="item-has-input">
+            <ion-input clearInput type="password" text-left placeholder="ENTER YOUR PIN"></ion-input>
+            <ion-label class="align-right label-img"><ion-img src="../../assets/imgs/icon-key.png"></ion-img></ion-label>
+          </ion-item>
+          <ion-item>
+            <button ion-button class="btn-login" round full large (click)="loginUser()">LOGIN</button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
