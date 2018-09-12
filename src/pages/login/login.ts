@@ -5,6 +5,8 @@ import { SidemenuPage } from './../sidemenu/sidemenu';
 
 import { AuthProvider } from './../../providers/auth/auth';
 
+import { OAuth, DataService } from 'forcejs';
+
 @IonicPage()
 @Component({
   selector: 'page-login',

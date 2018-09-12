@@ -22,7 +22,9 @@ ion-app {
   background: transparent !important;
   border: none !important;
 }
-
+ion-header {
+  top: 30px;
+}
 .md .menu-inner {
   background: #f3f8f9;
 }
@@ -50,6 +52,9 @@ ion-item-divider {
 }
 .toolbar-title {
   font-size: 36px;
+  text-align: center;
+  font-family: "BrandonGrotesque-Regular";
+  text-transform: uppercase;
 }
 // Defining Fonts for App
 @font-face {

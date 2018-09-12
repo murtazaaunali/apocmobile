@@ -2,8 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, Nav, AlertController } from 'ionic-angular';
 
 import { AuthProvider } from './../../providers/auth/auth';
-// ForceJS Plugin
-import { OAuth, DataService } from 'forcejs';
+
 
 @Component({
   selector: 'page-home',
@@ -12,17 +11,5 @@ import { OAuth, DataService } from 'forcejs';
 export class HomePage {
   constructor(public navCtrl: NavController, public authProvider: AuthProvider, public alertCtrl: AlertController) {
     //this.loadUsers()
-  }
-
-  loadUsers() {
-    let oauth = OAuth.createInstance();
-    oauth.login()
-      .then(oauthResult => {
-        let service = DataService.createInstance(oauthResult);
-        service.query('SELECT Id, Name FROM User LIMIT 10')
-          .then(response => {
-            //this.users = response.records;
-          });
-      });
   }
 }

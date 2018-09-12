@@ -7,28 +7,28 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
+    "com.salesforce": {
+      "PACKAGE_NAME": "com.abbott.apocmobile"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
-    },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
+      "PACKAGE_NAME": "com.abbott.apocmobile"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
+      "PACKAGE_NAME": "com.abbott.apocmobile"
     },
-    "com.salesforce": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.abbott.apocmobile"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.abbott.apocmobile"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.abbott.apocmobile"
     }
   },
   "dependent_plugins": {
     "phonegap-plugin-push": {
-      "PACKAGE_NAME": "com.ionicsalesforce.starter"
+      "PACKAGE_NAME": "com.abbott.apocmobile"
     }
   }
 }

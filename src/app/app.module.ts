@@ -14,6 +14,7 @@ import { ActivitiesPage } from '../pages/activities/activities';
 import { CalendarPage } from '../pages/calendar/calendar';
 
 import { AuthProvider } from '../providers/auth/auth';
+import { ContactServiceProvider } from '../providers/contact-service/contact-service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AuthProvider } from '../providers/auth/auth';
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    AuthProvider
+    AuthProvider,
+    ContactServiceProvider
   ]
 })
 export class AppModule { }

@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import {promise} from "selenium-webdriver";
-import {NULL_EXPR} from "@angular/compiler/src/output/output_ast";
 
 export interface User {
   name: string;

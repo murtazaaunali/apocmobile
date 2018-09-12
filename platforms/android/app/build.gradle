@@ -91,7 +91,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../phonegap-plugin-push/starter-push.gradle"
+apply from: "../phonegap-plugin-push/apocmobile-push.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -158,12 +158,6 @@ task cdvPrintProps << {
 }
 
 android {
-	packagingOptions {
-		exclude 'META-INF/LICENSE'
-		exclude 'META-INF/LICENSE.txt'
-		exclude 'META-INF/DEPENDENCIES'
-		exclude 'META-INF/NOTICE'
-	}
 	packagingOptions {
 		exclude 'META-INF/LICENSE'
 		exclude 'META-INF/LICENSE.txt'
@@ -271,7 +265,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
-    implementation(project(path: ":CordovaLib"))
+    api project(':SalesforceHybrid')
     compile "com.android.support:support-v13:23+"
     compile "com.google.android.gms:play-services-gcm:+"
     // SUB-PROJECT DEPENDENCIES END

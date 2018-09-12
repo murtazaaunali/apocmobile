@@ -25689,6 +25689,10 @@ ion-app {
   border: none !important;
 }
 
+ion-header {
+  top: 30px;
+}
+
 .md .menu-inner {
   background: #f3f8f9;
 }
@@ -25723,6 +25727,9 @@ ion-item-divider {
 
 .toolbar-title {
   font-size: 36px;
+  text-align: center;
+  font-family: "BrandonGrotesque-Regular";
+  text-transform: uppercase;
 }
 
 @font-face {
@@ -25758,6 +25765,67 @@ ion-item-divider {
 @font-face {
   font-family: HelveticaNeueLTStd-Roman;
   src: url(../assets/fonts/HelveticaNeueLTStd-Roman.otf);
+}
+
+page-contacts .datatable-header {
+  background: #a4c0d6;
+  padding: 1em 0 0 1em;
+}
+
+page-contacts .datatable-header-cell {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+page-contacts .datatable-body-row {
+  padding: 0;
+}
+
+page-contacts .datatable-row-even {
+  background: #f0f0f0;
+}
+
+page-contacts .datatable-row-odd {
+  background: white;
+}
+
+page-contacts .datatable-body-cell {
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+page-contacts .datatable-footer {
+  background: #dae2ea;
+  padding: 0 1em 0 1em;
+}
+
+page-contacts .datatable-footer .pager li {
+  padding: 0 1em !important;
+}
+
+page-contacts .datatable-footer .pager li a {
+  color: #444444;
+  text-decoration: none;
+}
+
+page-contacts .datatable-icon-done-all:before {
+  content: ">>";
+}
+
+page-contacts .datatable-icon-left:before {
+  content: "<";
+}
+
+page-contacts .datatable-icon-right:before {
+  content: ">";
+}
+
+page-contacts .datatable-icon-skip:before {
+  content: ">>";
+}
+
+page-contacts .datatable-icon-prev:before {
+  content: "<<";
 }
 
 page-login body {

@@ -25679,11 +25679,18 @@ ion-navbar.toolbar {
 }
 
 ion-app {
-  font-family: "Helvetica Neue";
+  font-family: "BrandonGrotesque-Regular";
+  border-top: 10px solid #009ada;
+  border-bottom: 10px solid #009ada;
 }
 
-.toolbar-background-md {
-  background: transparent;
+.toolbar-background {
+  background: transparent !important;
+  border: none !important;
+}
+
+ion-header {
+  top: 30px;
 }
 
 .md .menu-inner {
@@ -25710,9 +25717,121 @@ ion-app {
   height: 35px;
 }
 
+ion-list {
+  margin: 0px !important;
+}
+
+ion-item-divider {
+  background: #e4e9ec !important;
+}
+
+.toolbar-title {
+  font-size: 36px;
+  text-align: center;
+  font-family: "BrandonGrotesque-Regular";
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: BrandonGrotesque-Bold;
+  src: url(../assets/fonts/BrandonGrotesque-Bold.otf);
+}
+
+@font-face {
+  font-family: BrandonGrotesque-Medium;
+  src: url(../assets/fonts/BrandonGrotesque-Medium.otf);
+}
+
+@font-face {
+  font-family: BrandonGrotesque-Regular;
+  src: url(../assets/fonts/BrandonGrotesque-Regular.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Bd.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Cn;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Cn.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Mdtitle.otf);
+}
+
+@font-face {
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url(../assets/fonts/HelveticaNeueLTStd-Roman.otf);
+}
+
+page-contacts .datatable-header {
+  background: #a4c0d6;
+  padding: 1em 0 0 1em;
+}
+
+page-contacts .datatable-header-cell {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+page-contacts .datatable-body-row {
+  padding: 0;
+}
+
+page-contacts .datatable-row-even {
+  background: #f0f0f0;
+}
+
+page-contacts .datatable-row-odd {
+  background: white;
+}
+
+page-contacts .datatable-body-cell {
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+page-contacts .datatable-footer {
+  background: #dae2ea;
+  padding: 0 1em 0 1em;
+}
+
+page-contacts .datatable-footer .pager li {
+  padding: 0 1em !important;
+}
+
+page-contacts .datatable-footer .pager li a {
+  color: #444444;
+  text-decoration: none;
+}
+
+page-contacts .datatable-icon-done-all:before {
+  content: ">>";
+}
+
+page-contacts .datatable-icon-left:before {
+  content: "<";
+}
+
+page-contacts .datatable-icon-right:before {
+  content: ">";
+}
+
+page-contacts .datatable-icon-skip:before {
+  content: ">>";
+}
+
+page-contacts .datatable-icon-prev:before {
+  content: "<<";
+}
+
 page-login body {
   padding: 0px;
   margin: 0px;
+  font-family: "BrandonGrotesque-Regular";
 }
 
 page-login .grid {
@@ -25723,6 +25842,10 @@ page-login .grid {
 
 page-login .grid .row {
   height: 100%;
+}
+
+page-login ion-img {
+  background: transparent;
 }
 
 page-login .bg-image-login {
@@ -25738,7 +25861,152 @@ page-login .logo-image {
   background: url(../../assets/imgs/logo_main.png) no-repeat center center;
   width: 245px;
   height: 214px;
-  top: 33%;
-  left: 25%;
+  top: 36%;
+  right: 6%;
   position: absolute;
+}
+
+page-login .login-form {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+}
+
+page-login .user-details {
+  margin-bottom: 20px;
+}
+
+page-login .profile-image {
+  width: 55px;
+  height: 55px;
+}
+
+page-login .signed-in-as {
+  font-size: 14px;
+  color: #818181;
+  font-family: "BrandonGrotesque-Bold";
+}
+
+page-login .user-name {
+  font-size: 26px;
+  color: #009ada;
+  font-family: "BrandonGrotesque-Bold";
+}
+
+page-login .item-has-input {
+  border-radius: 20px !important;
+  border: 2px solid #aaaaaa !important;
+  padding: 0px 15px;
+  margin: 0px;
+  color: #aaaaaa;
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(170, 170, 170, 0.5);
+  box-shadow: 0px 0px 30px 1px rgba(170, 170, 170, 0.5);
+}
+
+page-login .text-input {
+  padding: 5px 52px 5px 0px !important;
+  font-size: 12px;
+  font-family: "BrandonGrotesque-Medium";
+}
+
+page-login .label-img {
+  margin: 0px 10px 11px 10px !important;
+  border-left: 1px solid #aaaaaa;
+  padding-left: 6px;
+}
+
+page-login .align-right {
+  position: absolute;
+  right: 0;
+}
+
+page-login .text-input-clear-icon {
+  right: 40px !important;
+}
+
+page-login .item-block {
+  padding: 0px !important;
+  background: transparent !important;
+}
+
+page-login .item-block .item-inner {
+  padding: 0px !important;
+}
+
+page-login .btn-login {
+  background: #009ada;
+  border-radius: 20px !important;
+}
+
+page-login ion-label {
+  margin: 11px 0px 11px 0px !important;
+}
+
+page-sidemenu .menu-inner {
+  background: #f3f8f9 !important;
+}
+
+page-sidemenu .menu-inner .content {
+  background: #f3f8f9 !important;
+}
+
+page-sidemenu .item-block {
+  font-family: "HelveticaNeueLTStd-Roman";
+  text-transform: capitalize;
+  color: #616c71;
+  font-size: 16px;
+  border-bottom: 0.55px solid #e5eaed;
+  background: #f3f8f9 !important;
+  padding: 0px !important;
+}
+
+page-sidemenu .item-block .item-inner {
+  padding-left: 15px;
+}
+
+page-sidemenu .menu-icon {
+  width: 31px;
+  height: 31px;
+  vertical-align: middle;
+  background: transparent !important;
+}
+
+page-sidemenu .text-menu-btn {
+  position: absolute;
+  top: 17px;
+  left: 60px;
+}
+
+page-sidemenu .profile-section {
+  background: #fafafd !important;
+  padding: 15px 0px !important;
+}
+
+page-sidemenu .profile-section .item-inner {
+  border: none !important;
+}
+
+page-sidemenu .profile-image {
+  width: 53px;
+  height: 53px;
+  background: transparent;
+}
+
+page-sidemenu .username {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  color: #616d72;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "BrandonGrotesque-Medium";
+}
+
+page-sidemenu .instance {
+  position: absolute;
+  top: 58px;
+  left: 80px;
+  font-size: 14px;
+  font-family: "BrandonGrotesque-Medium";
 }

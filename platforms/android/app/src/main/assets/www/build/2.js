@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 281:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var LoginPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64,13 +64,13 @@ var LoginPage = /** @class */ (function () {
         this.authProvider = authProvider;
         this.alertCtrl = alertCtrl;
         this.user = {
-            name: 'admin',
-            pw: 'admin'
+            name: 'Akili Cooper',
+            pin: '1234'
         };
     }
     LoginPage.prototype.loginUser = function () {
         var _this = this;
-        this.authProvider.login(this.user.name, this.user.pw).then(function (success) {
+        this.authProvider.login(this.user.name, this.user.pin).then(function (success) {
             if (success) {
                 _this.navCtrl.setRoot('SidemenuPage');
             }
@@ -93,7 +93,7 @@ var LoginPage = /** @class */ (function () {
     ], LoginPage.prototype, "nav", void 0);
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\pages\login\login.html"*/'<!-- <ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n</ion-header> -->\n<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6 class="bg-image-login">\n        <ion-img src="../../assets/logo-main.png" class="logo-image"></ion-img>\n      </ion-col>\n      <ion-col col-6 class="bg-white">\n        <ion-list class="list">\n          <ion-item>\n            <ion-label fixed>Username</ion-label>\n            <ion-input type="text" [(ngModel)]="user.name"></ion-input>\n          </ion-item>\n          <ion-item>\n            <ion-label fixed>Password</ion-label>\n            <ion-input type="password" [(ngModel)]="user.pw"></ion-input>\n          </ion-item>\n        </ion-list>\n        <button ion-button full (click)="loginUser()">Login</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"E:\Hybrid\Salesforce\apocmobile\src\pages\login\login.html"*/'<!-- <ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n</ion-header> -->\n<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6 class="bg-image-login">\n        <ion-img src="../../assets/logo-main.png" class="logo-image"></ion-img>\n      </ion-col>\n      <ion-col col-6 class="bg-white">\n        <ion-list class="login-form" no-lines>\n          <ion-item text-center class="user-details">\n            <ion-img src="../../assets/imgs/default-profile.png" class="profile-image"></ion-img>\n            <p class="signed-in-as">Signed in as</p>\n            <h3 class="user-name">JOHN DOE</h3>\n          </ion-item>\n          <ion-item class="item-has-input">\n            <ion-input clearInput type="password" text-left placeholder="ENTER YOUR PIN"></ion-input>\n            <ion-label class="align-right label-img"><ion-img src="../../assets/imgs/icon-key.png"></ion-img></ion-label>\n          </ion-item>\n          <ion-item>\n            <button ion-button class="btn-login" round full large (click)="loginUser()">LOGIN</button>\n          </ion-item>\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"E:\Hybrid\Salesforce\apocmobile\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], LoginPage);
