@@ -90,3 +90,57 @@ ion-item-divider {
   font-family: HelveticaNeueLTStd-Roman;
   src: url(../assets/fonts/HelveticaNeueLTStd-Roman.otf);
 }
+
+.toolbar-background{
+  border: 1px solid gainsboro!important;
+}
+
+.toolbar-ios{
+  min-height: 75px!important;
+}
+
+.subheader-icon-txt{
+  display: inline-block;
+  vertical-align: super;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.contacts-content{
+  padding-left: 10px;
+  font-size: 80%;
+  vertical-align: text-top;
+}
+
+ion-header{
+  top:0px!important;
+}
+
+ion-card {
+  min-height: 180px!important;
+}
+
+
+.card p {
+  min-height: 15px;
+}
+
+.filter-input{
+  border: 1px solid #009ada!important;
+  border-radius: 10px;
+}
+
+.inline-label {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.close-btn{
+  color: #009ada;
+  font-size: x-large;
+}
+
+.search-filter{
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+}

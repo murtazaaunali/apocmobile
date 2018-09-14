@@ -1,0 +1,15 @@
+.toolbar-background{
+  border: 1px solid gainsboro!important;
+}
+
+.toolbar-ios{
+  min-height: 75px!important;
+}
+
+.subheader-icon-txt{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 16px;
+  font-size: 20px;
+  margin-left: 5px;
+}

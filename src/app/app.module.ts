@@ -15,6 +15,8 @@ import { CalendarPage } from '../pages/calendar/calendar';
 
 import { AuthProvider } from '../providers/auth/auth';
 import { ContactServiceProvider } from '../providers/contact-service/contact-service';
+import {ContactsFilterModalPage} from "../pages/contacts-filter-modal/contacts-filter-modal";
+import {NewContactPage} from "../pages/new-contact/new-contact";
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ContactServiceProvider } from '../providers/contact-service/contact-ser
     ContactsPage,
     OpportunitiesPage,
     ActivitiesPage,
-    CalendarPage
+    CalendarPage,
+    ContactsFilterModalPage,
+    NewContactPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { ContactServiceProvider } from '../providers/contact-service/contact-ser
     ContactsPage,
     OpportunitiesPage,
     ActivitiesPage,
-    CalendarPage
+    CalendarPage,
+    ContactsFilterModalPage,
+    NewContactPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,91 @@
+<!--
+  Generated template for the ContactsFilterModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="padding-left: 10px">
+        <img src="../../assets/imgs/filter.png"/>
+        <h2 class="inline-label">Filters</h2>
+    </ion-title>
+    <ion-buttons end>
+      <button class="close-btn" ion-button icon-only (click)="closeModal()">
+        <ion-icon item-right name="ios-close-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+<ion-row>
+  <ion-col>
+    <ion-item class="item-has-input filter-input">
+      <ion-input clearInput type="text" text-left [(ngModel)]="filter.firstName" placeholder="Search by first name" ></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col>
+    <ion-item class="item-has-input filter-input">
+      <ion-input clearInput type="text" text-left [(ngModel)]="filter.lastName" placeholder="Search by last name"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+<br>
+    <ion-row>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.jobTitle" placeholder="Search by job title" ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.department" placeholder="Search by department"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+<br>
+    <ion-row>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.phone" placeholder="Search by phone number" ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.mobile" placeholder="Search by mobile number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+<br>
+    <ion-row>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.email" placeholder="Search by email" ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.accountName" placeholder="Search by account name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+<br>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <button ion-button class="btn-login" round (click)="FilterContact()">SEARCH</button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-list>
+
+
+</ion-content>

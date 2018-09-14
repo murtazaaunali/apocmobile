@@ -32,6 +32,7 @@ import {DataService} from 'forcejs';
 @Injectable()
 export class ContactServiceProvider {
   service: any;
+  responseData:any;
 
   constructor() {
     this.service = DataService.getInstance();
@@ -51,8 +52,11 @@ export class ContactServiceProvider {
   }
 
   findAll() {
-    return this.service.query('SELECT Id, Name, Title, Department, AccountName, Phone, MobilePhone, Email  FROM Contact ORDER BY name')
-      .then(response => response.records.map(this.prettifyContact));
+    return this.service.query('SELECT Id, Name, Title, Department, Account.Name, Phone, MobilePhone, Email  FROM Contact ORDER BY name')
+      .then(response => {
+        this.responseData= response.records.map(this.prettifyContact);
+        return this.responseData;
+      });
   }
 
   findById(id) {
