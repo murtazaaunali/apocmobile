@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Pipe, PipeTransform } from '@angular/core';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,6 +18,8 @@ import { AuthProvider } from '../providers/auth/auth';
 import { ContactServiceProvider } from '../providers/contact-service/contact-service';
 import {ContactsFilterModalPage} from "../pages/contacts-filter-modal/contacts-filter-modal";
 import {NewContactPage} from "../pages/new-contact/new-contact";
+import { NamefilterPipe } from '../pipes/namefilter/namefilter';
+
 
 @NgModule({
   declarations: [
@@ -29,13 +32,15 @@ import {NewContactPage} from "../pages/new-contact/new-contact";
     ActivitiesPage,
     CalendarPage,
     ContactsFilterModalPage,
-    NewContactPage
+    NewContactPage,
+    NamefilterPipe
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
+  exports:[NamefilterPipe],
   entryComponents: [
     MyApp,
     HomePage,
@@ -46,14 +51,15 @@ import {NewContactPage} from "../pages/new-contact/new-contact";
     ActivitiesPage,
     CalendarPage,
     ContactsFilterModalPage,
-    NewContactPage
+    NewContactPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     AuthProvider,
+    NamefilterPipe,
     ContactServiceProvider
-  ]
+  ],
 })
 export class AppModule { }

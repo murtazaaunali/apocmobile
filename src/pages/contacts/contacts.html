@@ -23,7 +23,7 @@
       </ion-col>
       <ion-col col-4>
         <ion-item class="item-has-input search-filter">
-          <ion-input clearInput type="text" text-left placeholder="Search Contact"></ion-input>
+          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>
           <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>
         </ion-item>
       </ion-col>
@@ -37,7 +37,7 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-    <ion-col col-md-4 *ngFor="let con of contacts">
+    <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter">
       <ion-card>
         <ion-card-header>
           <h2><b>{{con.name}}</b></h2>

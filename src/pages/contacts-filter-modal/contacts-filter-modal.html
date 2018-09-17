@@ -24,7 +24,7 @@
 <ion-content padding>
 
   <ion-list>
-
+<br>
 <ion-row>
   <ion-col>
     <ion-item class="item-has-input filter-input">
@@ -37,7 +37,7 @@
     </ion-item>
   </ion-col>
 </ion-row>
-<br>
+
     <ion-row>
       <ion-col>
         <ion-item class="item-has-input filter-input">
@@ -50,7 +50,7 @@
         </ion-item>
       </ion-col>
     </ion-row>
-<br>
+
     <ion-row>
       <ion-col>
         <ion-item class="item-has-input filter-input">
@@ -63,7 +63,7 @@
         </ion-item>
       </ion-col>
     </ion-row>
-<br>
+
     <ion-row>
       <ion-col>
         <ion-item class="item-has-input filter-input">
@@ -77,15 +77,19 @@
       </ion-col>
     </ion-row>
 <br>
+
     <ion-row>
       <ion-col>
         <ion-item>
-          <button ion-button class="btn-login" round (click)="FilterContact()">SEARCH</button>
+          <button ion-button class="btn-login search-btn center" round (click)="FilterContact()">SEARCH</button>
         </ion-item>
       </ion-col>
     </ion-row>
 
   </ion-list>
-
-
+<style>
+  .modal-wrapper{
+    height: 425px!important;
+  }
+</style>
 </ion-content>

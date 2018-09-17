@@ -51,7 +51,7 @@ export class ContactServiceProvider {
     }
   }
 
-  findAll() {
+  findAllContacts() {
     return this.service.query('SELECT Id, Name, Title, Department, Account.Name, Phone, MobilePhone, Email  FROM Contact ORDER BY name')
       .then(response => {
         this.responseData= response.records.map(this.prettifyContact);
@@ -63,4 +63,25 @@ export class ContactServiceProvider {
     return this.service.retrieve('Contact', id, 'Id, Name, Title, Department, Phone, MobilePhone, Email').then(this.prettifyContact);
   }
 
+  searchFilteredContacts(filters,contacts){
+    return new Promise((resolve, reject) => {
+    this.responseData=contacts.filter(function (el) {
+      return (el.name.toLowerCase() == filters.firstName.toLowerCase() ||
+        el.job_title.toLowerCase() == filters.jobTitle.toLowerCase() ||
+        el.department.toLowerCase() == filters.department.toLowerCase() ||
+        el.phone == filters.phone||
+        el.mobile == filters.mobile ||
+        el.email == filters.email ||
+        el.account_name.toLowerCase() == filters.accountName.toLowerCase());
+    });
+    console.log(this.responseData);
+      if(this.responseData.length>0){
+        resolve(this.responseData);
+      }
+      else{
+        console.log("No Contacts Found");
+        reject([]);
+      }
+  });
+  }
 }

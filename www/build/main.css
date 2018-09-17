@@ -25820,6 +25820,17 @@ ion-card {
   border: 2px solid gainsboro;
 }
 
+.search-btn {
+  padding: 20px !important;
+  height: 35px !important;
+  font-size: 15px !important;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
 page-contacts .datatable-header {
   background: #a4c0d6;
   padding: 1em 0 0 1em;
