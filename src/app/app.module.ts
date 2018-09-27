@@ -20,6 +20,8 @@ import {ContactsFilterModalPage} from "../pages/contacts-filter-modal/contacts-f
 import {NewContactPage} from "../pages/new-contact/new-contact";
 import { NamefilterPipe } from '../pipes/namefilter/namefilter';
 
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { NamefilterPipe } from '../pipes/namefilter/namefilter';
   ],
   imports: [
     BrowserModule,
+    NgxDatatableModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

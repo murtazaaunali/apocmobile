@@ -4,6 +4,7 @@ import { ContactServiceProvider} from "../../providers/contact-service/contact-s
 import {ContactsFilterModalPage} from "../contacts-filter-modal/contacts-filter-modal";
 import {NewContactPage} from "../new-contact/new-contact";
 import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
+import 'rxjs';
 
 @IonicPage()
 @Component({
@@ -15,11 +16,17 @@ export class ContactsPage{
   contacts: any;
   searchFilter='';
   loader;
+  rows;
+  temp=[];
+  columns;
+  mode='table';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public contactService: ContactServiceProvider,public modalCtrl: ModalController,public loadingCtrl: LoadingController,public filterCtrl:NamefilterPipe) {
      this.loader = this.loadingCtrl.create({
       content: "Please wait...",
     });
+    this.mode='table';
+
   }
 
   /*openContacts(contact) {
@@ -35,9 +42,24 @@ export class ContactsPage{
     this.navCtrl.push(NewContactPage);
   }
 
+
+  FilterTableRows(event){
+    const val = event.target.value.toLowerCase();
+
+    // filter our data
+    const temp = this.temp.filter(function(d) {
+      return d.name.toLowerCase().indexOf(val) !== -1 || !val;
+    });
+
+    // update the rows
+    this.rows = temp;
+
+  }
+
   SearchContact(filters){
     console.log(filters);
     this.loader.present();
+
     this.contactService.searchFilteredContacts(filters,this.contacts).then(data => {
       this.contacts = data;
       this.loader.dismiss();
@@ -50,6 +72,9 @@ export class ContactsPage{
       this.loader.present();
       this.contactService.findAllContacts().then(data => {
       this.contacts = data;
+      this.rows=this.contacts;
+      this.temp=this.rows;
+
       this.loader.dismiss();
     });
   }

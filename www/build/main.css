@@ -1,3 +1,6 @@
+@import url(~@swimlane/ngx-datatable/release/index.css);
+@import url(~@swimlane/ngx-datatable/release/themes/material.css);
+@import url(~@swimlane/ngx-datatable/release/assets/icons.css);
 .ion-ios-add:before {
   content: "\f102";
 }

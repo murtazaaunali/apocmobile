@@ -65,7 +65,7 @@ export class ContactServiceProvider {
 
   searchFilteredContacts(filters,contacts){
     return new Promise((resolve, reject) => {
-    this.responseData=contacts.filter(function (el) {
+    /*this.responseData=contacts.filter(function (el) {
       return (el.name.toLowerCase() == filters.firstName.toLowerCase() ||
         el.job_title.toLowerCase() == filters.jobTitle.toLowerCase() ||
         el.department.toLowerCase() == filters.department.toLowerCase() ||
@@ -73,14 +73,38 @@ export class ContactServiceProvider {
         el.mobile == filters.mobile ||
         el.email == filters.email ||
         el.account_name.toLowerCase() == filters.accountName.toLowerCase());
-    });
+    });*/
+      this.responseData=[];
+     /* for (var property in filters) {
+        if (filters.hasOwnProperty(property)) {
+          this.responseData.push(contacts.filter(item => JSON.stringify(item).toLowerCase().indexOf(filters.hasOwnProperty(property).toLowerCase()) !== -1));
+        }
+      }*/
+
+
+    /*  Object.keys(filters).forEach(function(key,index) {
+        // key: the name of the object key
+        // index: the ordinal position of the key within the object
+        this.responseData.push(contacts.filter(item => item.toLowerCase().indexOf(item[key].toLowerCase()) !== -1));
+      });
+
+      var filterKeys = Object.keys(filters);
+      this.responseData=contacts.filter(function (eachObj){
+        return filterKeys.every(function (eachKey) {
+          if (!filters[eachKey].length) {
+            return true;
+          }
+          return filters[eachKey].includes(eachObj[eachKey]);
+        });
+      });*/
+
     console.log(this.responseData);
       if(this.responseData.length>0){
         resolve(this.responseData);
       }
       else{
         console.log("No Contacts Found");
-        reject([]);
+        reject();
       }
   });
   }
