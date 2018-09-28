@@ -148,8 +148,9 @@ ion-card {
 
 .search-btn {
   padding: 20px!important;
-  height: 35px!important;
-  font-size: 15px!important;
+  height: 45px!important;
+  font-size: 16px!important;
+  width: 165px!important;
 }
 
 .center{
@@ -160,3 +161,8 @@ ion-card {
 @import '~@swimlane/ngx-datatable/release/index.css';
 @import '~@swimlane/ngx-datatable/release/themes/material.css';
 @import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+.card-header-md {
+  margin-bottom: -10px!important;
+}
+

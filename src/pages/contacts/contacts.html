@@ -9,13 +9,13 @@
     <ion-row>
       <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="OpenFiltersModal()">
-          <img src="../../assets/imgs/filter.png"/>
+          <img style="vertical-align: bottom" src="../../assets/imgs/filter.png"/>
           <div class="subheader-icon-txt">Filters</div>
         </button>
       </ion-col>
       <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="AddNewContactModal()">
-          <img src="../../assets/imgs/new.png"/>
+          <img style="vertical-align: bottom" src="../../assets/imgs/new.png"/>
           <div class="subheader-icon-txt">New</div>
         </button>
       </ion-col>
@@ -40,24 +40,24 @@
 
 
 <ion-content padding>
-  <ion-grid *ngIf="false">
+  <ion-grid *ngIf="true">
     <ion-row>
-    <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter">
-      <ion-card>
+    <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="    margin-top: -15px;">
+      <ion-card style=" min-height: 155px!important;max-height: 155px">
         <ion-card-header>
           <h2><b>{{con.name}}</b></h2>
-          <p><span>{{con.job_title}}</span><span *ngIf="con.department!=null"> | {{con.department}}</span></p>
+          <p style="white-space: pre-line"><span>{{con.job_title}}</span><span *ngIf="con.department!=null"> | {{con.department}}</span></p>
         </ion-card-header>
-        <ion-card-content>
+        <ion-card-content style="margin-top: -10px">
           <ion-row>
             <ion-col col-12 *ngIf="con.email!=null"><ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.email}}</span></ion-col>
             <ion-col col-12 *ngIf="con.email==null"><ion-icon name="mail"></ion-icon><span class="contacts-content">N/A</span></ion-col>
           </ion-row>
-          <ion-row>
+          <ion-row style="margin-top: -10px;">
             <ion-col col-12 *ngIf="con.phone!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.phone}}</span></ion-col>
             <ion-col col-12 *ngIf="con.phone==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>
           </ion-row>
-          <ion-row>
+          <ion-row style="margin-top: -10px;">
             <ion-col col-12 *ngIf="con.mobile!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.mobile}}</span></ion-col>
             <ion-col col-12 *ngIf="con.mobile==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>
           </ion-row>
@@ -68,7 +68,7 @@
   </ion-grid>
 
 
-  <div>
+  <div *ngIf="false">
     <ngx-datatable  #table [rows]="rows" [limit]="10" [columnMode]="'force'"
                    [headerHeight]="50"
                    [footerHeight]="50"

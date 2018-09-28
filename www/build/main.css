@@ -25834,6 +25834,10 @@ ion-card {
   display: block;
 }
 
+.card-header-md {
+  margin-bottom: -10px !important;
+}
+
 page-contacts .datatable-header {
   background: #a4c0d6;
   padding: 1em 0 0 1em;
