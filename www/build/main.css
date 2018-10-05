@@ -25681,6 +25681,168 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+:host {
+  font-size: 1rem;
+}
+
+:host /deep/ * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:host /deep/ button,
+:host /deep/ input,
+:host /deep/ optgroup,
+:host /deep/ select,
+:host /deep/ textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+:host /deep/ table {
+  line-height: 1.5em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+:host /deep/ table tr th {
+  font-weight: bold;
+}
+
+:host /deep/ table tr section {
+  font-size: .75em;
+  font-weight: bold;
+}
+
+:host /deep/ table tr td,
+:host /deep/ table tr th {
+  font-size: .875em;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+:host /deep/ a {
+  color: #1e6bb8;
+  text-decoration: none;
+}
+
+:host /deep/ a:hover {
+  text-decoration: underline;
+}
+
+:host input,
+:host textarea {
+  width: 100%;
+  line-height: normal;
+  padding: .375em .75em;
+}
+
+:host .ng2-smart-filter /deep/ input,
+:host .ng2-smart-filter /deep/ select {
+  width: 100%;
+  line-height: normal;
+  padding: .375em .75em;
+  font-weight: normal;
+}
+
+:host .ng2-smart-filter /deep/ input[type="search"] {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+:host .ng2-smart-filter /deep/ .completer-dropdown-holder {
+  font-weight: normal;
+}
+
+:host .ng2-smart-filter /deep/ a {
+  font-weight: normal;
+}
+
+.ng2-smart-pagination {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: .875em;
+  padding: 0;
+}
+
+.ng2-smart-pagination .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.ng2-smart-pagination .ng2-smart-page-item {
+  display: inline;
+}
+
+.ng2-smart-pagination .page-link-next, .ng2-smart-pagination .page-link-prev {
+  font-size: 10px;
+}
+
+:host {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+:host select {
+  margin: 1rem 0 1rem 1rem;
+}
+
+:host label {
+  margin: 1rem 0 1rem 1rem;
+  line-height: 2.5rem;
+}
+
+:host .ng2-smart-row.selected {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+:host .ng2-smart-row .ng2-smart-actions.ng2-smart-action-multiple-select {
+  text-align: center;
+}
+
+a.sort.asc, a.sort.desc {
+  font-weight: bold;
+}
+
+a.sort.asc::after, a.sort.desc::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  margin-bottom: 2px;
+}
+
+a.sort.desc::after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  margin-bottom: -2px;
+}
+
 ion-app {
   font-family: "BrandonGrotesque-Regular";
   border-top: 10px solid #009ada;
@@ -25825,8 +25987,9 @@ ion-card {
 
 .search-btn {
   padding: 20px !important;
-  height: 35px !important;
-  font-size: 15px !important;
+  height: 45px !important;
+  font-size: 16px !important;
+  width: 165px !important;
 }
 
 .center {
@@ -25836,6 +25999,44 @@ ion-card {
 
 .card-header-md {
   margin-bottom: -10px !important;
+}
+
+ng2-smart-table table tr td, ng2-smart-table table tr th {
+  padding: 1em !important;
+  border: 1px solid dimgray !important;
+  font-size: 12px !important;
+}
+
+ng2-smart-table table tr:nth-child(even) {
+  background: #f3f8f9 !important;
+}
+
+ng2-smart-table table tr:nth-child(odd) {
+  background: #FFF !important;
+}
+
+ng2-smart-filters {
+  line-height: 40px !important;
+}
+
+input-filter input {
+  line-height: 20px !important;
+  padding: 8px !important;
+  border: 1px solid dimgray;
+  border-radius: 5px;
+}
+
+ng2-smart-table-title {
+  font-size: 15px !important;
+  color: #2b73bc;
+}
+
+.ng2-smart-pagination .ng2-smart-page-item {
+  padding: 8px !important;
+}
+
+ng2-smart-table-pager {
+  font-size: 17px !important;
 }
 
 page-contacts .datatable-header {

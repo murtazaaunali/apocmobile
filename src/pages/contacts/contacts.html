@@ -28,7 +28,7 @@
         </ion-item>
 
         <ion-item class="item-has-input search-filter"  *ngIf="mode=='table'">
-          <ion-input clearInput type="text" (keyup)='FilterTableRows($event)' text-left placeholder="Search Contact"></ion-input>
+          <ion-input clearInput type="text" [(ngModel)]="searchFilter" (keyup)="onSearch(searchFilter)" text-left placeholder="Search Contact"></ion-input>
           <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>
         </ion-item>
       </ion-col>
@@ -40,7 +40,7 @@
 
 
 <ion-content padding>
-  <ion-grid *ngIf="true">
+  <ion-grid *ngIf="false">
     <ion-row>
     <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="    margin-top: -15px;">
       <ion-card style=" min-height: 155px!important;max-height: 155px">
@@ -143,5 +143,8 @@
       </ngx-datatable-column>-->
 
     </ngx-datatable>
+  </div>
+  <div>
+    <ng2-smart-table [settings]="settings" [source]="rows"></ng2-smart-table>
   </div>
 </ion-content>

@@ -21,6 +21,8 @@ import {NewContactPage} from "../pages/new-contact/new-contact";
 import { NamefilterPipe } from '../pipes/namefilter/namefilter';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2CompleterModule } from "ng2-completer";
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
   imports: [
     BrowserModule,
     NgxDatatableModule,
+    Ng2SmartTableModule,
+    Ng2CompleterModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

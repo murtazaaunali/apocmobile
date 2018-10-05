@@ -166,3 +166,38 @@ ion-card {
   margin-bottom: -10px!important;
 }
 
+ng2-smart-table table tr td, ng2-smart-table table tr th {
+
+  padding: 1em!important;
+  border: 1px solid dimgray!important;
+  font-size:12px!important;
+}
+
+ng2-smart-table table tr:nth-child(even) {
+  background: #f3f8f9!important;
+}
+ng2-smart-table table tr:nth-child(odd) {
+  background: #FFF!important
+} 
+ng2-smart-filters{
+  line-height: 40px!important;
+}
+
+input-filter input{
+  line-height: 20px!important;
+  padding: 8px!important;
+  border: 1px solid dimgray;
+    border-radius: 5px;
+}
+
+ng2-smart-table-title{
+  font-size: 15px!important;
+  color: #2b73bc;
+}
+.ng2-smart-pagination .ng2-smart-page-item {
+  padding: 8px!important;
+}
+
+ng2-smart-table-pager{
+  font-size: 17px!important;
+}

@@ -5,6 +5,8 @@ import {ContactsFilterModalPage} from "../contacts-filter-modal/contacts-filter-
 import {NewContactPage} from "../new-contact/new-contact";
 import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
 import 'rxjs';
+import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
+
 
 @IonicPage()
 @Component({
@@ -20,6 +22,79 @@ export class ContactsPage{
   temp=[];
   columns;
   mode='table';
+
+  settings = {
+    columns: {
+      name: {
+        title: 'Name',
+        filter:false
+      },
+      job_title: {
+        title: 'Job Title',
+        filter:false
+      },
+      department: {
+        title: 'Department',
+        filter:false
+      },
+      email: {
+        title: 'Email',
+        sort:false,
+        filter:false
+      },
+      phone: {
+        title: 'Phone',
+        sort:false,
+        filter:false
+      },
+      mobile: {
+        title: 'Mobile',
+        sort:false,
+        filter:false
+      }
+    },
+    actions: {
+      add: false,
+      edit: false,
+      delete: false
+      }
+  };
+
+  onSearch(query: string = '') {
+    if(query==''){
+      this.rows=new LocalDataSource(this.contacts);
+    }
+    else{
+      this.rows.setFilter([
+        // fields we want to include in the search
+        {
+          field: 'name',
+          search: query
+        },
+        {
+          field: 'job_title',
+          search: query
+        },
+        {
+          field: 'department',
+          search: query
+        },
+        {
+          field: 'email',
+          search: query
+        },
+        {
+          field: 'phone',
+          search: query
+        },
+        {
+          field: 'mobile',
+          search: query
+        }
+      ], false);
+    }
+
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public contactService: ContactServiceProvider,public modalCtrl: ModalController,public loadingCtrl: LoadingController,public filterCtrl:NamefilterPipe) {
      this.loader = this.loadingCtrl.create({
@@ -74,7 +149,7 @@ export class ContactsPage{
       this.contacts = data;
       this.rows=this.contacts;
       this.temp=this.rows;
-
+      this.rows = new LocalDataSource(this.rows);
       this.loader.dismiss();
     });
   }

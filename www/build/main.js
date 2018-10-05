@@ -1,12 +1,12 @@
 webpackJsonp([11],{
 
-/***/ 122:
+/***/ 131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_forcejs__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_forcejs__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_forcejs__);
 /*
 Contact Service Provider for extracting and storing Contacts from Salesforce against User
@@ -127,7 +127,7 @@ var ContactServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 145:
+/***/ 156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -195,14 +195,14 @@ var AuthProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 146:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsFilterModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(131);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -278,13 +278,13 @@ var ContactsFilterModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 147:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -323,7 +323,7 @@ var NewContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 181:
+/***/ 193:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -336,56 +336,56 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 181;
+webpackEmptyAsyncContext.id = 193;
 
 /***/ }),
 
-/***/ 222:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/accounts/accounts.module": [
-		449,
+		519,
 		10
 	],
 	"../pages/activities/activities.module": [
-		450,
+		520,
 		9
 	],
 	"../pages/calendar/calendar.module": [
-		451,
+		521,
 		8
 	],
 	"../pages/contacts-filter-modal/contacts-filter-modal.module": [
-		452,
+		522,
 		7
 	],
 	"../pages/contacts/contacts.module": [
-		453,
+		523,
 		6
 	],
 	"../pages/dashboard/dashboard.module": [
-		454,
+		524,
 		5
 	],
 	"../pages/login/login.module": [
-		455,
+		525,
 		2
 	],
 	"../pages/new-contact/new-contact.module": [
-		456,
+		526,
 		4
 	],
 	"../pages/opportunities/opportunities.module": [
-		457,
+		527,
 		3
 	],
 	"../pages/register/register.module": [
-		458,
+		528,
 		1
 	],
 	"../pages/sidemenu/sidemenu.module": [
-		459,
+		529,
 		0
 	]
 };
@@ -400,12 +400,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 222;
+webpackAsyncContext.id = 235;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 224:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -451,13 +451,13 @@ var NamefilterPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 268:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -496,13 +496,13 @@ var AccountsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 269:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -541,13 +541,13 @@ var ActivitiesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 270:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -586,18 +586,19 @@ var CalendarPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 271:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__new_contact_new_contact__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__new_contact_new_contact__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__ = __webpack_require__(238);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -607,6 +608,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -625,11 +627,82 @@ var ContactsPage = /** @class */ (function () {
         this.searchFilter = '';
         this.temp = [];
         this.mode = 'table';
+        this.settings = {
+            columns: {
+                name: {
+                    title: 'Name',
+                    filter: false
+                },
+                job_title: {
+                    title: 'Job Title',
+                    filter: false
+                },
+                department: {
+                    title: 'Department',
+                    filter: false
+                },
+                email: {
+                    title: 'Email',
+                    sort: false,
+                    filter: false
+                },
+                phone: {
+                    title: 'Phone',
+                    sort: false,
+                    filter: false
+                },
+                mobile: {
+                    title: 'Mobile',
+                    sort: false,
+                    filter: false
+                }
+            },
+            actions: {
+                add: false,
+                edit: false,
+                delete: false
+            }
+        };
         this.loader = this.loadingCtrl.create({
             content: "Please wait...",
         });
         this.mode = 'table';
     }
+    ContactsPage.prototype.onSearch = function (query) {
+        if (query === void 0) { query = ''; }
+        if (query == '') {
+            this.rows = new __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__["a" /* LocalDataSource */](this.contacts);
+        }
+        else {
+            this.rows.setFilter([
+                // fields we want to include in the search
+                {
+                    field: 'name',
+                    search: query
+                },
+                {
+                    field: 'job_title',
+                    search: query
+                },
+                {
+                    field: 'department',
+                    search: query
+                },
+                {
+                    field: 'email',
+                    search: query
+                },
+                {
+                    field: 'phone',
+                    search: query
+                },
+                {
+                    field: 'mobile',
+                    search: query
+                }
+            ], false);
+        }
+    };
     /*openContacts(contact) {
       this.navCtrl.push(ContactDetailsPage, contact);
     }*/
@@ -666,12 +739,13 @@ var ContactsPage = /** @class */ (function () {
             _this.contacts = data;
             _this.rows = _this.contacts;
             _this.temp = _this.rows;
+            _this.rows = new __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__["a" /* LocalDataSource */](_this.rows);
             _this.loader.dismiss();
         });
     };
     ContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contacts',template:/*ion-inline-start:"C:\Projects\apocmobile\src\pages\contacts\contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img src="../../assets/imgs/filter.png"/>\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img src="../../assets/imgs/new.png"/>\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter"  *ngIf="mode==\'grid\'">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>\n        </ion-item>\n\n        <ion-item class="item-has-input search-filter"  *ngIf="mode==\'table\'">\n          <ion-input clearInput type="text" (keyup)=\'FilterTableRows($event)\' text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-grid *ngIf="true">\n    <ion-row>\n    <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="    margin-top: -15px;">\n      <ion-card style=" min-height: 155px!important;max-height: 155px">\n        <ion-card-header>\n          <h2><b>{{con.name}}</b></h2>\n          <p style="white-space: pre-line"><span>{{con.job_title}}</span><span *ngIf="con.department!=null"> | {{con.department}}</span></p>\n        </ion-card-header>\n        <ion-card-content style="margin-top: -10px">\n          <ion-row>\n            <ion-col col-12 *ngIf="con.email!=null"><ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.email}}</span></ion-col>\n            <ion-col col-12 *ngIf="con.email==null"><ion-icon name="mail"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n          </ion-row>\n          <ion-row style="margin-top: -10px;">\n            <ion-col col-12 *ngIf="con.phone!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.phone}}</span></ion-col>\n            <ion-col col-12 *ngIf="con.phone==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n          </ion-row>\n          <ion-row style="margin-top: -10px;">\n            <ion-col col-12 *ngIf="con.mobile!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.mobile}}</span></ion-col>\n            <ion-col col-12 *ngIf="con.mobile==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n          </ion-row>\n        </ion-card-content>\n      </ion-card>\n    </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <div *ngIf="false">\n    <ngx-datatable  #table [rows]="rows" [limit]="10" [columnMode]="\'force\'"\n                   [headerHeight]="50"\n                   [footerHeight]="50"\n                   [rowHeight]="\'auto\'">\n\n    <ngx-datatable-column [sortable]="true" name="Name">\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n          <span (click)="sort()">Name</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.name}}\n        </ng-template>\n      </ngx-datatable-column>\n      <ngx-datatable-column [sortable]="true" name="JobTitle">\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n          <span (click)="sort()">Job Title</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.job_title}}\n        </ng-template>\n      </ngx-datatable-column>\n      <ngx-datatable-column [sortable]="true" name="Department">\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n          <span (click)="sort()">Department</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.department}}\n        </ng-template>\n      </ngx-datatable-column>\n      <ngx-datatable-column [sortable]="true" name="Account">\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n          <span (click)="sort()">Account</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.account_name}}\n        </ng-template>\n      </ngx-datatable-column>\n      <ngx-datatable-column [sortable]="true" name="Email">\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n          <span (click)="sort()">Email</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.email}}\n        </ng-template>\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="Mobile">\n        <ng-template let-column="column" ngx-datatable-header-template>\n          <span>Mobile</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.mobile}}\n        </ng-template>\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="Phone">\n        <ng-template let-column="column" ngx-datatable-header-template>\n          <span>Phone</span>\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.phone}}\n        </ng-template>\n      </ngx-datatable-column>\n\n     <!-- <ngx-datatable-column>\n        <ng-template let-column="column" ngx-datatable-header-template>\n          Fax\n        </ng-template>\n        <ng-template let-row="row" ngx-datatable-cell-template>\n          {{row.fax}}\n        </ng-template>\n      </ngx-datatable-column>-->\n\n    </ngx-datatable>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Projects\apocmobile\src\pages\contacts\contacts.html"*/,
+            selector: 'page-contacts',template:/*ion-inline-start:"C:\Projects\apocmobile\src\pages\contacts\contacts.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>CONTACTS</ion-title>\n\n  </ion-navbar>\n\n  <ion-toolbar>\n\n    <ion-row>\n\n      <ion-col col-2 style="padding-left: 10px">\n\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n\n          <img style="vertical-align: bottom" src="../../assets/imgs/filter.png"/>\n\n          <div class="subheader-icon-txt">Filters</div>\n\n        </button>\n\n      </ion-col>\n\n      <ion-col col-2 style="padding-left: 10px">\n\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n\n          <img style="vertical-align: bottom" src="../../assets/imgs/new.png"/>\n\n          <div class="subheader-icon-txt">New</div>\n\n        </button>\n\n      </ion-col>\n\n      <ion-col col-2>\n\n      </ion-col>\n\n      <ion-col col-4>\n\n        <ion-item class="item-has-input search-filter"  *ngIf="mode==\'grid\'">\n\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n\n          <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>\n\n        </ion-item>\n\n\n\n        <ion-item class="item-has-input search-filter"  *ngIf="mode==\'table\'">\n\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" (keyup)="onSearch(searchFilter)" text-left placeholder="Search Contact"></ion-input>\n\n          <ion-label item-right class="align-right label-img"><ion-icon name="search"></ion-icon></ion-label>\n\n        </ion-item>\n\n      </ion-col>\n\n      <ion-col col-2>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-grid *ngIf="false">\n\n    <ion-row>\n\n    <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="    margin-top: -15px;">\n\n      <ion-card style=" min-height: 155px!important;max-height: 155px">\n\n        <ion-card-header>\n\n          <h2><b>{{con.name}}</b></h2>\n\n          <p style="white-space: pre-line"><span>{{con.job_title}}</span><span *ngIf="con.department!=null"> | {{con.department}}</span></p>\n\n        </ion-card-header>\n\n        <ion-card-content style="margin-top: -10px">\n\n          <ion-row>\n\n            <ion-col col-12 *ngIf="con.email!=null"><ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.email}}</span></ion-col>\n\n            <ion-col col-12 *ngIf="con.email==null"><ion-icon name="mail"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n\n          </ion-row>\n\n          <ion-row style="margin-top: -10px;">\n\n            <ion-col col-12 *ngIf="con.phone!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.phone}}</span></ion-col>\n\n            <ion-col col-12 *ngIf="con.phone==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n\n          </ion-row>\n\n          <ion-row style="margin-top: -10px;">\n\n            <ion-col col-12 *ngIf="con.mobile!=null"><ion-icon name="call"></ion-icon><span class="contacts-content">{{con.mobile}}</span></ion-col>\n\n            <ion-col col-12 *ngIf="con.mobile==null"><ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span></ion-col>\n\n          </ion-row>\n\n        </ion-card-content>\n\n      </ion-card>\n\n    </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n\n\n\n\n  <div *ngIf="false">\n\n    <ngx-datatable  #table [rows]="rows" [limit]="10" [columnMode]="\'force\'"\n\n                   [headerHeight]="50"\n\n                   [footerHeight]="50"\n\n                   [rowHeight]="\'auto\'">\n\n\n\n    <ngx-datatable-column [sortable]="true" name="Name">\n\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n\n          <span (click)="sort()">Name</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.name}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="JobTitle">\n\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n\n          <span (click)="sort()">Job Title</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.job_title}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="Department">\n\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n\n          <span (click)="sort()">Department</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.department}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="Account">\n\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n\n          <span (click)="sort()">Account</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.account_name}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n      <ngx-datatable-column [sortable]="true" name="Email">\n\n        <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n\n          <span (click)="sort()">Email</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.email}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n\n\n      <ngx-datatable-column [sortable]="true" name="Mobile">\n\n        <ng-template let-column="column" ngx-datatable-header-template>\n\n          <span>Mobile</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.mobile}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n\n\n      <ngx-datatable-column [sortable]="true" name="Phone">\n\n        <ng-template let-column="column" ngx-datatable-header-template>\n\n          <span>Phone</span>\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.phone}}\n\n        </ng-template>\n\n      </ngx-datatable-column>\n\n\n\n     <!-- <ngx-datatable-column>\n\n        <ng-template let-column="column" ngx-datatable-header-template>\n\n          Fax\n\n        </ng-template>\n\n        <ng-template let-row="row" ngx-datatable-cell-template>\n\n          {{row.fax}}\n\n        </ng-template>\n\n      </ngx-datatable-column>-->\n\n\n\n    </ngx-datatable>\n\n  </div>\n\n  <div>\n\n    <ng2-smart-table [settings]="settings" [source]="rows"></ng2-smart-table>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Projects\apocmobile\src\pages\contacts\contacts.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__["a" /* ContactServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]])
@@ -683,13 +757,13 @@ var ContactsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 272:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -728,13 +802,13 @@ var DashboardPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -773,13 +847,13 @@ var OpportunitiesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 274:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(412);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -787,37 +861,41 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 396:
+/***/ 412:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(446);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(447);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_accounts_accounts__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contacts_contacts__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_activities_activities__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_calendar_calendar__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_auth_auth__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_contact_service_contact_service__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_new_contact_new_contact__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pipes_namefilter_namefilter__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__swimlane_ngx_datatable__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_accounts_accounts__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contacts_contacts__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_activities_activities__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_calendar_calendar__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_auth_auth__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_contact_service_contact_service__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_new_contact_new_contact__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pipes_namefilter_namefilter__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__swimlane_ngx_datatable__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__swimlane_ngx_datatable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ng2_smart_table__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ng2_completer__ = __webpack_require__(71);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -858,6 +936,8 @@ var AppModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
                 __WEBPACK_IMPORTED_MODULE_18__swimlane_ngx_datatable__["NgxDatatableModule"],
+                __WEBPACK_IMPORTED_MODULE_19_ng2_smart_table__["b" /* Ng2SmartTableModule */],
+                __WEBPACK_IMPORTED_MODULE_20_ng2_completer__["b" /* Ng2CompleterModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/accounts/accounts.module#AccountsPageModule', name: 'AccountsPage', segment: 'accounts', priority: 'low', defaultHistory: [] },
@@ -905,16 +985,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 446:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_forcejs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -962,14 +1042,14 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 447:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(156);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1002,5 +1082,5 @@ var HomePage = /** @class */ (function () {
 
 /***/ })
 
-},[274]);
+},[291]);
 //# sourceMappingURL=main.js.map
